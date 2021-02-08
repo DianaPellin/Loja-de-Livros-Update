@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página da Diana!</title>
+</head>
+<body>
+<div th:each="produto : ${listaDeLivros}">
+    <h1 th:text="${produto.nome}">Titulo</h1>
+    <h2 th:text="${produto.autor}">Autor</h2>
+    <img th:src="${produto.imagem}" alt="Imagem contendo a capa do livro">
+</div>
+</body>
+</html>
+
+<!--<h1 th:text="${p1.nome}">Titulo</h1>-->
+<!--<h2 th:text="${p1.autor}">Autor</h2>-->
+<!--<img th:src="${p1.imagem}" alt="Imagem contendo a capa do livro">-->
+
+<!--<h1 th:text="${p2.nome}">titulo</h1>-->
+<!--<h2 th:text="${p2.autor}">Autor</h2>-->
+<!--<img th:src="${p2.imagem}" alt="Imagem do livro">-->
+
+<!--<h1 th:text="${p3.nome}">titulo</h1>-->
+<!--<h2 th:text="${p3.autor}">Autor</h2>-->
+<!--<img th:src="${p3.imagem}" alt="Imagem do livro">-->
+
+<!--<h1 th:text="${p4.nome}">titulo</h1>-->
+<!--<h2 th:text="${p4.autor}">Autor</h2>-->
+<!--<img th:src="${p4.imagem}" alt="Imagem do livro">-->
+
